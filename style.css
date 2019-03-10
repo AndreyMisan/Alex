@@ -49,9 +49,11 @@ header ul li a {
     border-radius: 15px;
 }
 
-.btn, .active,  header ul a:hover {
+.btn,
+.active,
+header ul a:hover {
     background: #76c38f;
-    border-radius: 15px;  
+    border-radius: 15px;
     padding: 10px 20px;
     transition: 0.5s;
     color: #fff;
@@ -112,18 +114,19 @@ header .container {
     color: #979797;
 }
 
-#slider .arrow-left, #slider .arrow-right {
+#slider .arrow-left,
+#slider .arrow-right {
     position: absolute;
     top: 40%;
     cursor: pointer;
 }
 
 #slider .arrow-left {
-    left:0;
+    left: 0;
 }
 
 #slider .arrow-right {
-    right:0;
+    right: 0;
 }
 
 #services {
@@ -134,18 +137,18 @@ header .container {
     width: 25%;
 }
 
-@keyframes hoverService { 
-   0% {
-    top: 0px; 
-    background: #fff;
-    color: #000;
-   }
-   
-   100% {
-    top: -10px;
-    color: #fff;
-    background: #76c38f;
-   }
+@keyframes hoverService {
+    0% {
+        top: 0px;
+        background: #fff;
+        color: #000;
+    }
+
+    100% {
+        top: -10px;
+        color: #fff;
+        background: #76c38f;
+    }
 }
 
 .service .wrap {
@@ -275,7 +278,7 @@ div#gallery .image-block:nth-child(3n) .wrap {
     font-size: 18px;
 }
 
-.footer-top a span{
+.footer-top a span {
     color: #979797;
     margin-right: 5px;
 }
@@ -287,10 +290,11 @@ div#gallery .image-block:nth-child(3n) .wrap {
 }
 
 #footer-top a {
-color: #76c38e;
+    color: #76c38e;
 }
 
-#footer-top .contact input, #footer-top .contact textarea {
+#footer-top .contact input,
+#footer-top .contact textarea {
     background: #222222;
     border: none;
     color: #979797;
@@ -316,16 +320,24 @@ color: #76c38e;
 
 
 @media(max-width: 1030px) {
-    #gallery .image-block .wrap, 
+
+    #gallery .image-block .wrap,
     #services .service .wrap {
         margin: 8px !important;
     }
+
     .latest {
         margin-right: 8px;
         margin-left: 8px;
     }
+
     header ul {
         margin-right: 0;
+    }
+
+    .footer-top-block {
+        width: 50%;
+
     }
 }
 
@@ -340,14 +352,17 @@ color: #76c38e;
         text-align: center;
         padding-top: 15px;
     }
+
     header ul {
         margin-top: 15px;
         width: 100%;
         flex-direction: column;
     }
+
     #logo {
         width: 100%;
     }
+
     #slider {
         flex-direction: column;
         align-items: center;
@@ -373,8 +388,24 @@ color: #76c38e;
         width: 50%;
     }
 }
+
 @media(max-width: 580px) {
-    .service, #gallery .image-block {
-        width: 100%;    
+
+    .service,
+    #gallery .image-block {
+        width: 100%;
+    }
+
+    .footer-top-block {
+        width: 100%;
+
+    }
+
+    #footer-top-wrap {
+        padding: 15px;
+    }
+
+    #footer-top-wrap h3 {
+        margin-top: 0;
     }
 }
